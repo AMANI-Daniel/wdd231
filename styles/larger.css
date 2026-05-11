@@ -19,11 +19,10 @@
     .navigation ul{
         display: flex;
 
-        li{
-            flex: 1 1 100%;
-        }
-
     }
+    .navigation ul   li {
+          flex: 1 1 100%;
+      }
 
     .navigation a{
         text-align: center;
