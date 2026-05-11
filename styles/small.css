@@ -1,0 +1,198 @@
+/*The color that I will use are #0e1e34 and #E07A5F*/
+
+* {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;;
+}
+
+/*----------------HEADER---------------------*/
+header {
+    display: grid;
+    grid-template-columns: 48px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: center;
+    border-bottom: 2px solid #ddd;
+    gap: 8px;
+    margin-left: .5rem;
+}
+
+/*-------------LOGO-------------*/
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+
+}
+
+/*-------------------SITE NAME---------------*/
+header span {
+    font-size: 1.3rem;
+    color: #0e1e34;
+}
+/*---------------HAM BUTTON--------------*/
+.hamburger {
+    background: none;
+    border: none;
+    color: #0e1e34;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+
+}
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+.navigation{
+    display: none;
+    
+}
+
+.navigation.show{
+    display: block;
+
+
+}
+.navigation ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: 1rem 10px;
+    color: #0e1e34;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.2rem;
+
+}
+.navigation a:hover{
+    background-color: rgb(12, 16, 56);
+    color: #fff;
+}
+
+.current{
+    background-color: #fcb035;
+}
+
+/*----------Styling the main element ----------*/
+
+main{
+    display: grid;
+    gap: 15px;
+
+}
+
+h1{
+    margin: 0;
+    padding: 5px 0 0 10px;
+}
+
+h2{
+    
+    text-align: center;
+    margin: 0;
+    background-color: rgb(12, 16, 56);
+    color: #fff;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    padding: 5px;
+
+}
+
+.photo{
+    text-align: center;
+}
+.photo img{
+    width: 320px;
+    height: auto;
+    margin: 5px;
+
+}
+section{
+    border: 2px solid #ddd;
+    padding: 5px 10px;
+    margin: .5rem 0;
+    background-color: #e7ebd1;
+    border-radius: 5px;
+}
+
+.filtered p{
+    margin: 5px;
+    text-align: center;
+    font-size: 1.3rem;
+}
+.about p{
+    font-size: 1.1rem;
+}
+.btn{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+.btn button{
+    font-size: 1.5rem;
+    margin: 10px 0;
+    padding: .5rem;
+    background-color: #ddd;
+    border-radius: 5px;
+    
+}
+
+.selected span{
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+    border: #0e1e34 solid 1px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.2rem;
+
+}
+.course{
+    box-shadow: 10px 10px 10px rgb(125, 123, 123);
+}
+.course:hover{
+    cursor: pointer;
+    background-color: #fcb035;
+}
+
+/*-------------STYLING THE FOOTER------*/
+
+footer {
+    background-color: #eee;
+    padding: 1rem 10px;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.social a {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.social a:hover {
+    background-color: #ddd;
+}
+
+.social img {
+    width: 25px;
+    height: 25px;
+}

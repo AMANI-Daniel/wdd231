@@ -3,10 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD-231</title>
+    <title>Software Development Journey</title>
+
+    <meta name="description" content="This site explainss the required courses and the credits that are needed to get Web Development Certificate and Software Development degree.">
+    <meta name="author" content="AMANI Daniel">
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
+        rel="stylesheet">
+
 </head>
 <body>
-    <h1>WDD-231 Web-Developement</h1>
+    <header>
+        <img src="images/logo.svg" alt="site logo" height="700" width="2000">
+        <span>A-Code Learning Camp</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="#" class="current">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section class="about">
+            <h2>About Me</h2>
+                <p>I'm AMANI Daniel, I live in Rwanda in Kigali City. I'm fascinated in Software Development and I have started studying Software Development and I started Software Development as my career. As a professional developer, I'm willing to expand my career through A-code Learning Camp which will solve problems as well as shaping developers.</p>
+        </section>
+        <section class="photo">
+            <h2>Student Photo</h2>
+            <img src="images/profile.webp" alt="student photo" loading="lazy">
+        </section>
+        <section class="certify">
+            <h2>Web Certificate Courses</h2>
+            <div class="btn">
+                <button id="all-btn" class="course">All</button>
+                <button id="cse-btn" class="course">CSE</button>
+                <button id="wdd-btn" class="course">WDD</button>
+            </div>
+            <div id="fill" class="filtered"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://github.com/" target="_blank"><img src="images/github.svg" alt="github icon" width="16"
+                    height="16"></a>
+            <a href="https://x.com/" target="_blank"><img src="images/twitter-x.svg" alt="x icon" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.svg" alt="linkedin icon" width="16"
+                    height="16"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.svg" alt="facebook icon" width="16"
+                    height="16"></a>
+        </div>
+        <p>&copy; <span id="currentyear"></span> || AMANI Daniel || Rwanda</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
 </body>
 </html>
