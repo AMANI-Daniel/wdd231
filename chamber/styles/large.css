@@ -1,7 +1,7 @@
 @media  only screen and (min-width: 38rem) {
 
     header{
-        grid-template-columns: 48px auto 44px;
+        grid-template-columns: 48px auto;
     
     }
     .hamburger {
@@ -19,18 +19,36 @@
     }
     .navigation a{
         text-align: center;
-        /* border: none; */
     }
 
     /*----STYLE THE CARDS OF IMAGES-----*/
 
     .imagecards{
         display: grid;
-        grid-template-columns: repeat(4,1fr);
-        gap: 1.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            width: 90%;
+            margin: 0 auto;
+
+        
     }
     .imagecards.horiz{
         display: block;
+
+        section{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: .6rem;
+            margin: .5rem 0 
+            
+        }
+        .address{
+            display: none;
+        }
+
+        img{
+            display: none;
+        }
+
     }
 
     footer{

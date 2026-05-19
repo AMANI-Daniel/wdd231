@@ -42,10 +42,10 @@ let displayCompany = (companies)=>{
         image.setAttribute('alt', 'company logo');
         image.setAttribute('loading', 'lazy');
 
-        let name = document.createElement('span');
-        name.setAttribute('class', 'companyname');
+        let name = document.createElement('h2');
         name.textContent = company.name;
         let address = document.createElement('p');
+        address.setAttribute('class', 'address');
         address.textContent = company.address;
 
         let phone = document.createElement('p');
@@ -59,7 +59,6 @@ let displayCompany = (companies)=>{
         email.textContent = `Email: ${company.email} `;
 
         let companyUrl = document.createElement('a');
-        // companyUrl.textContent = company.url;
         companyUrl.setAttribute('href', company.url);
         companyUrl.textContent = company.url;
 
@@ -71,10 +70,6 @@ let displayCompany = (companies)=>{
         card.appendChild(membership);
         card.appendChild(email);
         card.appendChild(companyUrl);
-
-        // modebtn.addEventListener('click', () => {
-        //     card.classList.toggle('show')
-        // });
 
 
         cards.appendChild(card);
