@@ -1,0 +1,41 @@
+@media  only screen and (min-width: 38rem) {
+
+    header{
+        grid-template-columns: 48px auto 44px;
+    
+    }
+    .hamburger {
+        display: none;
+    }
+
+    .navigation{
+        display: block;
+    }
+    .navigation ul{
+        display: flex;
+    }
+    .navigation ul li{
+        flex: 1 1 100%;
+    }
+    .navigation a{
+        text-align: center;
+        /* border: none; */
+    }
+
+    /*----STYLE THE CARDS OF IMAGES-----*/
+
+    .imagecards{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 1.5rem;
+    }
+    .imagecards.horiz{
+        display: block;
+    }
+
+    footer{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+    }
+}

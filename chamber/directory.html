@@ -4,17 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kigali City Chamber Of Commerce</title>
-    <meta name="description" content="This page show the list of local businesses in Kigali and their membership in Kigali City Chamber Of Commerce">
+    <meta name="description" content="This page show the list of local businesses in Kigali and their membership in Kigali Chamber Of Commerce">
     <meta name="author" content="AMANI Daniel">
     <link rel="icon" href="images/kigali.ico">
 
-    <meta property="og:title" content="Kigali City Chamber Of Commerce">
+    <meta property="og:title" content="Kigali Chamber Of Commerce">
     <meta property="og:description" content="This page show the list of local businesses in Kigali and their membership in Kigali City Chamber Of Commerce">
     <meta property="og:image" content="images/kigali-logo.svg">
     <meta property="og:url" content="amani-daniel.github.io/wdd231/chamber/directory.html">
-    
+
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <script src="scripts/directory.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <img src="images/kigali-logo.svg" alt="The chamber logo" width="250" height="250">
+        <span>Kigali Chamber Of Commerce</span>
+        <button id="mode-btn" class="mode"><img src="images/mode.svg" alt="night-mode icon"></button>
+        <button id="click" class="hamburger"></button>
+    </header>
+    <nav class="navigation" id="nav-bar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Discover</a></li>
+            <li class="current"><a href="directory.html">Directory</a></li>
+            <li><a href="">Join</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Kigali Chamber Of Commerce Partners Directory</h1>
+        <div class="change">
+            <button class="grid" id="grid">Grid</button>
+            <button class="list" id="list">List</button>  
+        </div>
+        <div id="cards" class="imagecards"></div>
+    </main>
+    <footer>
+        <div class="address">
+            <h2>Kigali Chamber Of Commerce</h2>
+            <p>KN 250st, Kigali-Rwanda</p>
+            <p>+250783062182</p>
+        </div>
+        <div class="social">
+            <a href="https://x.com/" target="_blank"><img src="images/twitter-x.svg" alt="twitter-x icon" width="16"
+                    height="16"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.svg" alt="linkedin icon" width="16"
+                    height="16"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.svg" alt="facebook icon" width="16"
+                    height="16"></a>
+        </div>
+        <div class="copy">
+            <h2>WDD 231 Chamber Project</h2>
+            <p>&copy;<span id="currentyear"></span> || AMANI Daniel || Rwanda</p>
+            <p>Last Modified: <span id="lastmodified"></span></p>
+        </div>
+    </footer>
 </body>
 </html>

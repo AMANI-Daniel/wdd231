@@ -1,0 +1,76 @@
+{
+    "companies":[
+        {
+            "name": "HashaHost",
+            "address": "KG128 Street, Kigali, Rwanda",
+            "telephone": "+250788473846",
+            "url": "https://www.washahost.com/",
+            "image": "https://washahost.com/wp-content/uploads/2022/07/logo.png",
+            "membership": "member",
+            "email": "info@washahost.com"
+        },
+        {
+            "name": "KAN TECH INNOVATORS",
+            "address": "Mwogo, Rwanda",
+            "telephone": "+250 784 578 266",
+            "url": "https://kan.rw/",
+            "image": "https://kan.rw/wp-content/uploads/2025/11/KAN-TECH-INNOVATORS-FIRST-LOGO.jpg",
+            "membership": "silver",
+            "email": " info@kan.rw"
+        },
+        {
+            "name": "Ice Tech Rwanda",
+            "address": "Ice Tech Rwanda , 24F4+54, NR5, Kigali",
+            "telephone": "+250786446835",
+            "url": "https://icetechrwanda.com/",
+            "image": "https://icetechrwanda.com/storage/icons/logo-2.png",
+            "membership": "gold",
+            "email": "info@icetechrwanda.com"
+        },
+        {
+            "name": "Dellyck Limited",
+            "address": "Globe KN 5 Rd, Kigali, Rwanda",
+            "telephone": "+2507836222438",
+            "url": "https://dellyck.com/",
+            "image": "https://dellyck.com/logo.png",
+            "membership": "member",
+            "email": " info@dellyck.com"
+        },
+        {
+            "name": "Mix Venture",
+            "address": "4 KG 11 Ave, Kigali, Rwanda",
+            "telephone": "+250788414897",
+            "url": "https://www.mixventure.rw/",
+            "image": "https://www.mixventure.rw/assets/front/img/header_logo_1699171717799517426.png",
+            "membership": "silver",
+            "email": "info@mixventure.rw"
+        },
+        {
+            "name": "STEEK POLES CONSTRUCTION LTD",
+            "address": "Gishushu, Next To RDB,Kigali City, RWANDA",
+            "telephone": "+250798664379",
+            "url": "https://www.steelpoleconstrn.com/",
+            "image": "https://www.steelpoleconstrn.com/images/logo.png",
+            "membership": "gold",
+            "email": "info@steelpoleconstrn.com"
+        },
+        {
+            "name": "Trusted Kigali Developer",
+            "address": "KK 8 AV, Kicukiro, Kigali, Rwanda",
+            "telephone": "+250785675437",
+            "url": "https://kigalidevelopers.com/",
+            "image": "https://kigalidevelopers.com/wp-content/uploads/2025/04/trsuetd_kigali_develoeprs-Logo-Text_black.png",
+            "membership": "member",
+            "email": "hello@kigalidevelopers.com"
+        },
+        {
+            "name": "ISHYIGA SOFTWARE",
+            "address": "NO 18, 6 Avenue KG Rugando - Kimihurura Kigali, Rwanda",
+            "telephone": "+250798687932",
+            "url": "http://www.ishyiga.net/",
+            "image": "https://www.ishyiga.net/web/assets/images/logo-company.png",
+            "membership": "gold",
+            "email": "shyiga.rwanda@algorithm.rw"
+        }
+    ]
+}
