@@ -1,3 +1,4 @@
+
 function setSectionSelection() {
     const sectionSelect = document.querySelector("#sectionNumber");
     sections.forEach((section) => {
@@ -8,4 +9,4 @@ function setSectionSelection() {
     });
 }
 
-export function setSectionSelection(sections) {}
+export function setSectionSelection(sections)
