@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #eee;
+}
+main{
+    width: 35%;
+    margin: 1rem auto;
+    border: 3px solid #ddd;
+    border-radius: 5px;
+    padding: .5rem;
+    background-color: #fff;
+    text-align: center;
+
+}
+
+main p, figcaption{
+    font-size: 1.2rem;
+    color: rgb(29, 26, 104);
+}
+
+h1{
+    text-align: center;
+    color: rgb(29, 26, 104);
+}
+footer{
+    text-align: center;
+    color: rgb(29, 26, 104);
+    font-size: 1.2rem;
+}
