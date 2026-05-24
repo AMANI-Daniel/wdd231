@@ -1,18 +1,14 @@
 //Store the selected html elements
 
 const hambtn = document.querySelector('#click');
-
 const navbar = document.querySelector('#nav-bar');
 const modebtn = document.querySelector('#mode-btn');
 const cards = document.querySelector('#cards'); 
 const url = './data/members.json';
-
 const year = document.querySelector('#currentyear');
 const lastModified = document.querySelector('#lastmodified');
-
 const list = document.querySelector('#list');
 const grid = document.querySelector('#grid');
-
 const now = new Date();
 year.innerHTML = now.getFullYear();
 
@@ -84,4 +80,5 @@ grid.addEventListener('click', () => {
 });
 
 
+//JavaScript for the home page
 

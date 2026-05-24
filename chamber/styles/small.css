@@ -78,7 +78,7 @@ header span{
 }
 /*------STYLE OF THE MAIN CONTENTS---------*/
 
-h1 {
+.direct h1 {
     text-align: center;
     color: #000080;
     margin: 1rem auto;
@@ -117,7 +117,7 @@ h1 {
 }
 
 
-.imagecards section{
+.imagecards section {
     border: 1px solid #bbb;  
     background-color: #fff;
     border-radius: 5px;
@@ -152,7 +152,6 @@ h1 {
     text-align: center;
     margin: .5rem;
     padding: 5px;
-
 }
 
 /*--------STYLE THE FOOTER------*/
@@ -180,4 +179,114 @@ footer h2{
     background-color: #fff;
 }
 
+/*----------STYLING THE INDEX.HTML PAGE-------*/
 
+.home{
+    width: 95%;
+    margin: .5rem auto;
+}
+.land{
+    position: relative;
+}
+.land button{
+    position: absolute;
+    left: 5rem;
+    bottom: 16rem;
+    padding: .5rem;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    background-color: #e0c65f;
+    color: #0e1e34;
+}
+.land button:hover{
+    cursor: pointer;
+}
+
+.land p{
+    padding: 10px;
+    font-size: 1.5rem;
+    color: #FF6347;
+    text-align: center;
+    margin: 0;
+}
+.land h1{
+    padding: 10px;
+    color: #0e1e34;
+    margin: 0;
+}
+picture img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/*--------STYLING THE HOME PAGE----------*/
+
+.content{
+    display: grid;
+    gap: 1.5rem;
+}
+
+.content section{
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 15px 15px 15px #333;
+
+}
+.content section li{
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    color: #0e1e34;
+}
+.content section h2{
+    padding: 10px;
+    margin: 0;
+    color: #000080;
+}
+.content section p{
+    font-size: 1.1rem;
+    padding: 0 1.5rem;
+    color: #0e1e34;
+}
+
+.spot{
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.spot section{
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 15px 15px 15px #333;
+}
+
+.spot section img{
+    display: block;
+    width: 150px;
+    height: auto;
+    margin: 0 auto;
+}
+.spot section p{
+    font-size: 1.1rem;
+    color: #0e1e34;
+    text-align: center;
+    margin: 5px;
+}
+.spot section a{
+    display: block;
+    font-size: 1.1rem;
+    padding: 5px;
+    color: #000080;
+    text-align: center;
+}
+
+.spot h2{
+    display: block;
+    color: #000080;
+    text-align: center;
+    margin: .5rem;
+    padding: 5px;
+}

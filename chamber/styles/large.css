@@ -27,8 +27,8 @@
     .imagecards{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            width: 90%;
-            margin: 0 auto;
+        width: 90%;
+        margin: 0 auto;
 
         
     }
@@ -42,9 +42,6 @@
             margin: .5rem 0 
             
         }
-        .address{
-            display: none;
-        }
 
         img{
             display: none;
@@ -57,4 +54,24 @@
         grid-template-columns: repeat(3, 1fr);
         align-items: center;
     }
+    /*---------Styling index.html---------*/
+
+    .land button{
+        left: 5rem;
+        bottom: 7rem;
+        background-color: #e0c65f;
+        color: #0e1e34;    
+    }
+    .land p {
+        position: absolute;
+        left: 4rem;
+        top: 10rem;
+        padding: .8rem;
+        font-size: 4rem;
+    }
+
+    .content, .spot{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    
 }
