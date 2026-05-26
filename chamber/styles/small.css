@@ -5,13 +5,18 @@
 }
 
 /*----STYLE OF THE HEADER AND ITS CONTENTS------*/
+
+ body {
+     width: 95%;
+     margin: 0 auto;
+ }
 header{
     display: grid;
     grid-template-columns: 48px auto 44px;
     padding: 5px 0 5px 10px;
-    gap: 1rem;
+    gap: .5rem;
     align-items: center;
-    background-color: #0e1e34;
+    background-color: #eee;
 }
 
 header img{
@@ -23,14 +28,14 @@ header img{
 
 header span{
     font-size: 1.3rem;
-    color: #fff;
+    color: #3D405B;
 }
 
 .hamburger{
     background: none;
     border: none;
     cursor: pointer;
-    color: #fff;
+    color: #3D405B;
     padding: 10px;
 }
 
@@ -62,126 +67,117 @@ header span{
     padding: 0; 
 }
 .current{
-    background-color: #e0c65f;
+    background-color: #bbb;
 }
 .navigation a{
     display: block;
     text-decoration: none;
     padding: .5rem 10px;
     font-size: 1.3rem;
-    border: 1px solid #eee;
-    color: #0e1e34;
+    border: 1px solid #bbb;
+    color: #3D405B;
 }
 
 .navigation a:hover{
-    background-color: #eee;
+    background-color: #E07A5F;
 }
 /*------STYLE OF THE MAIN CONTENTS---------*/
 
 .direct h1 {
-    text-align: center;
-    color: #000080;
-    margin: 1rem auto;
+    padding: 10px;
+    margin: 0;
+    color: #3D405B; 
 
 }
 
 .change {
-    display: flex;
-    justify-content: center;
-    width: 200px;
-    margin: .5rem auto;
     padding: 10px;
-    background-color: #eee;
-    border-radius: 5px;
 
 }
 
 .list,
 .grid {
-    font-size: 1.5rem;
-    margin: 0 10px;
+    font-size: 1.2rem;
     padding: 5px;
     cursor: pointer;
-    border-radius: 5px;
-    color: #0e1e34;
-    background-color: #fff;
 
 }
+
 
 .imagecards{
     display: grid;
     gap: 1.5rem;
     padding: 1rem;
-    background-color: #eee;
 
 }
 
 
 .imagecards section {
     border: 1px solid #bbb;  
-    background-color: #fff;
     border-radius: 5px;
-    padding:5px;
-    box-shadow: 15px 15px 15px #333;
+    padding: 10px;
     
 }
 
- .imagecards section img{
+ .imagecards img{
     display: block;
-    width: 150px;
+    width: 100px;
     height: auto;
     margin: 0 auto;
 }
-.imagecards section a{
+.imagecards a{
     display: block;
-    font-size: 1.1rem;
     padding: 5px;
-    color: #000080;
     text-align: center;
 }
 
-.imagecards section p{
-    font-size: 1.1rem;
-    color:#0e1e34;
+.imagecards p{
+    color: #3D405B;
     text-align: center;
     margin: 5px;
 }
 .imagecards h2{
     display: block;
-    color: #000080;
+    color: #3D405B;
     text-align: center;
     margin: .5rem;
     padding: 5px;
+}
+.imagecards.horiz img {
+    display: none;
 }
 
 /*--------STYLE THE FOOTER------*/
 
 footer{
-    background-color: #0e1e34;
+    background-color: #eee;
     padding: 10px;
     text-align: center;
-    margin-top: 1rem;
+    display: grid;
 }
-
 footer p{
-    font-size: 1.2rem;
-    color: #e0c65f;
+    color: #3D405B;
 }
-
 footer h2{
-    color: #e0c65f;
-    
+    color: #3D405B; 
+}
+.social{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.2rem;
+   
 }
 .social img{
-    width: 32px;
+    width: 44px;
     height: auto;
-    margin: 1rem;
-    background-color: #fff;
+    background-color: #bbb;
+    padding: .5rem;
+    border-radius: 5px;
 }
 
 /*----------STYLING THE INDEX.HTML PAGE-------*/
 
-.home{
+/* .home{
     width: 95%;
     margin: .5rem auto;
 }
@@ -195,8 +191,6 @@ footer h2{
     padding: .5rem;
     border-radius: 5px;
     font-size: 1.5rem;
-    background-color: #e0c65f;
-    color: #0e1e34;
 }
 .land button:hover{
     cursor: pointer;
@@ -205,23 +199,21 @@ footer h2{
 .land p{
     padding: 10px;
     font-size: 1.5rem;
-    color: #FF6347;
     text-align: center;
     margin: 0;
 }
 .land h1{
     padding: 10px;
-    color: #0e1e34;
     margin: 0;
 }
 picture img{
     display: block;
     width: 100%;
     height: auto;
-}
+} */
 
 /*--------STYLING THE HOME PAGE----------*/
-
+/* 
 .content{
     display: grid;
     gap: 1.5rem;
@@ -231,7 +223,6 @@ picture img{
     border: 1px solid #ddd;
     padding: 10px;
     border-radius: 5px;
-    box-shadow: 15px 15px 15px #333;
 
 }
 .content section li{
@@ -260,7 +251,6 @@ picture img{
     border: 1px solid #bbb;
     border-radius: 5px;
     padding: 5px;
-    box-shadow: 15px 15px 15px #333;
 }
 
 .spot section img{
@@ -289,4 +279,4 @@ picture img{
     text-align: center;
     margin: .5rem;
     padding: 5px;
-}
+} */

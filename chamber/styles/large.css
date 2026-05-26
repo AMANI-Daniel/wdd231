@@ -1,5 +1,7 @@
 @media  only screen and (min-width: 38rem) {
 
+   
+
     header{
         grid-template-columns: 48px auto;
     
@@ -27,36 +29,32 @@
     .imagecards{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        width: 90%;
         margin: 0 auto;
 
         
     }
     .imagecards.horiz{
         display: block;
+    }
 
-        section{
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: .6rem;
-            margin: .5rem 0 
-            
-        }
+    .imagecards.horiz  section {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+         gap: .6rem;
+         margin: .5rem 0
+     } 
 
-        img{
-            display: none;
-        }
-
+    .imagecards.horiz  img {
+         display: none;
     }
 
     footer{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        align-items: center;
+        grid-template-columns: 1fr 200px 1fr;
+        
     }
     /*---------Styling index.html---------*/
 
-    .land button{
+    /* .land button{
         left: 5rem;
         bottom: 7rem;
         background-color: #e0c65f;
@@ -73,5 +71,5 @@
     .content, .spot{
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
-    
+     */
 }
