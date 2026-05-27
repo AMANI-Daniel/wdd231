@@ -11,7 +11,7 @@ hambtn.addEventListener('click', () => {
     navbar.classList.toggle('show');
 });
 
-const weatherIcon = document.querySelector('#weather-icon');
+const figure = document.querySelector('figure');
 const currentTemp = document.querySelector('#current-temp');
 const pressure = document.querySelector('#pressure');
 const humidity = document.querySelector('#humid');
@@ -45,9 +45,12 @@ function displayResults(data) {
     humidity.innerHTML = `<strong>${data.main.humidity}%</strong>`;
     pressure.innerHTML = `<strong>${data.main.pressure}</strong>`;
     const iconUrl = `https://openweathermap.org/payload/api/media/file/${data.weather[0].icon}@2x.png`;
-    weatherIcon.setAttribute('src', iconUrl);
-    weatherIcon.setAttribute('alt', data.weather[0].description);
+    let companyLogo = document.createElement('img');
+
+    companyLogo.setAttribute('src', iconUrl);
+    companyLogo.setAttribute('alt', data.weather[0].description);
     caption.innerHTML = `${data.weather[0].description}`;
+    figure.appendChild(companyLogo);
 }
 
 
