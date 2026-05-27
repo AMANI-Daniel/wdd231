@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kigali Chamber Of Commerce</title>
-    <meta name="description" content="This is the landing page for the chamber of commerce. It cantains the hero image, call to action and businesses spotlights.">
+    <meta name="description"
+        content="This is the landing page for the chamber of commerce. It cantains the hero image, call to action and businesses spotlights.">
     <meta name="author" content="AMANI Daniel">
     <link rel="icon" href="images/kigali.ico">
 
     <meta property="og:title" content="Kigali Chamber Of Commerce">
-    <meta property="og:description" content="This is the landing page for the chamber of commerce. It cantains the hero image, call to action and businesses spotlights.">
+    <meta property="og:description"
+        content="This is the landing page for the chamber of commerce. It cantains the hero image, call to action and businesses spotlights.">
     <meta property="og:image" content="https://amani-daniel.github.io/wdd231/chamber/images/kigali-logo.svg">
     <meta property="og:url" content="https://amani-daniel.github.io/wdd231/chamber/">
 
@@ -22,14 +25,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
-    <script  src="scripts/directory.js" defer></script>
     <script src="scripts/home.js" defer></script>
 </head>
+
 <body>
     <header>
         <img src="images/kigali-logo.svg" alt="The chamber logo" width="250" height="250">
         <span>Kigali Chamber Of Commerce</span>
-        <button id="click" class="hamburger"></button>
+        <button id="display" class="hamburger"></button>
     </header>
     <nav class="navigation" id="nav-bar">
         <ul>
@@ -39,45 +42,46 @@
             <li><a href="#">Join</a></li>
         </ul>
     </nav>
-        <main class="home">
-            <section class="land">
-                <picture>
-                    <source srcset="images/kigali-large.webp" media="(min-width: 38rem)">
-                    <img src="images/kigali-small.webp" alt="kigali city image" width="600" height="400">
-                </picture>
-                <h1>Home</h1>
-                <p>Welcome to Kigali Chamber of Commerce</p>
-                <button href="join.html">Join the Chamber</button>
-            </section>
-
-            <section class="content">
-                <section>
-                    <h2>Current  Events</h2>
-                    <ol class="events">
+    <main class="home">
+        <section class="land">
+            <img src="images/kigali-large.webp" alt="kigali city image" width="600" height="400">
+            <h1>Home</h1>
+            <p>Welcome to Kigali Chamber of Commerce</p>  
+        </section>
+        <section class="events">
+            <h2>Current Events</h2>
+            <div class="action">
+                <img src="images/meet.webp" alt="meeting image">
+                <article>
+                    <ol>
                         <li>Expand branches in other parts of country.</li>
                         <li>Member business owners gathering.</li>
                         <li>Selling shares in member businesses.</li>
                         <li>Increasing member businesses up to 70%.</li>
                     </ol>
-                </section>
-                <section>
-                    <h2>Kigali Weather</h2>
-                    <figure>
-                        <img id="weather-icon" src="" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                    <p>Temperature: <span id="current-temp"></span></p>
-                    <p>Humidity: <span id="humid"></span></p>
-                    <p>Pressure: <span id="pressure"></span></p>
-                </section>
-                <section id="forecast">
-                    <h2>Weather Forecast</h2>
-                </section>
-
-            </section>
-            <section id="spotlights" class="spot">
-            </section>
-        </main>
+                    <a href="join.html">Visit the chamber</a>
+                </article>
+            </div>
+        </section>
+        <section class="content">
+            <article>
+                <h2>Kigali Weather</h2>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+                <p>Temperature: <span id="current-temp"></span></p>
+                <p>Humidity: <span id="humid"></span></p>
+                <p>Pressure: <span id="pressure"></span></p>
+            </article>
+            <article id="forecast">
+                <h2>Weather Forecast</h2>
+            </article>
+        </section>
+        <h2 class="clear">Business spotlights</h2>
+        <section id="spotlights" class="spot">
+        </section>
+    </main>
     <footer>
         <div class="address">
             <h2>Kigali Chamber Of Commerce</h2>
@@ -87,10 +91,10 @@
         <div class="social">
             <a href="https://x.com/" target="_blank"><img src="images/twitter-x.svg" alt="twitter-x icon" width="16"
                     height="16"></a>
-            <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.svg" alt="linkedin icon" width="16"
-                    height="16"></a>
-            <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.svg" alt="facebook icon" width="16"
-                    height="16"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.svg" alt="linkedin icon"
+                    width="16" height="16"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.svg" alt="facebook icon"
+                    width="16" height="16"></a>
         </div>
         <div class="copy">
             <h2>WDD 231 Chamber Project</h2>
@@ -99,4 +103,5 @@
         </div>
     </footer>
 </body>
+
 </html>

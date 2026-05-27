@@ -26,7 +26,7 @@
 
     /*----STYLE THE CARDS OF IMAGES-----*/
 
-    .imagecards{
+    .imagecards, .spot{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         margin: 0 auto;
@@ -54,22 +54,24 @@
     }
     /*---------Styling index.html---------*/
 
-    /* .land button{
-        left: 5rem;
-        bottom: 7rem;
-        background-color: #e0c65f;
-        color: #0e1e34;    
+    .land{
+        position: relative;
     }
-    .land p {
+    .land p{
+        font-size: 5rem;
         position: absolute;
-        left: 4rem;
-        top: 10rem;
-        padding: .8rem;
-        font-size: 4rem;
+        top: 5rem;
+        left: 3rem;
+        color: #e0c05f;
+        text-align: center;
     }
 
-    .content, .spot{
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    .action{
+        grid-template-columns: 250px 1fr;
     }
-     */
+    .content{
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+
 }

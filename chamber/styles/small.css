@@ -6,8 +6,8 @@
 
 /*----STYLE OF THE HEADER AND ITS CONTENTS------*/
 
- body {
-     width: 95%;
+ main {
+     width: 90%;
      margin: 0 auto;
  }
 header{
@@ -74,19 +74,19 @@ header span{
     text-decoration: none;
     padding: .5rem 10px;
     font-size: 1.3rem;
-    border: 1px solid #bbb;
+    border: 2px solid #bbb;
     color: #3D405B;
 }
 
 .navigation a:hover{
-    background-color: #E07A5F;
+    background-color: #e0c05f;
 }
 /*------STYLE OF THE MAIN CONTENTS---------*/
 
 .direct h1 {
     padding: 10px;
     margin: 0;
-    color: #3D405B; 
+    color: #000080; 
 
 }
 
@@ -113,13 +113,13 @@ header span{
 
 
 .imagecards section {
-    border: 1px solid #bbb;  
+    border: 2px solid #bbb;  
     border-radius: 5px;
     padding: 10px;
     
 }
 
- .imagecards img{
+ .imagecards section img{
     display: block;
     width: 100px;
     height: auto;
@@ -129,16 +129,18 @@ header span{
     display: block;
     padding: 5px;
     text-align: center;
+    font-size: 1.1rem;
 }
 
 .imagecards p{
     color: #3D405B;
     text-align: center;
     margin: 5px;
+    font-size: 1.1rem;
 }
 .imagecards h2{
     display: block;
-    color: #3D405B;
+    color: #000080;
     text-align: center;
     margin: .5rem;
     padding: 5px;
@@ -157,9 +159,11 @@ footer{
 }
 footer p{
     color: #3D405B;
+    font-size: 1.1rem;
 }
 footer h2{
-    color: #3D405B; 
+    color: #000080;
+     
 }
 .social{
     display: flex;
@@ -177,106 +181,131 @@ footer h2{
 
 /*----------STYLING THE INDEX.HTML PAGE-------*/
 
-/* .home{
-    width: 95%;
-    margin: .5rem auto;
-}
 .land{
-    position: relative;
+    margin-top: 1rem;
 }
-.land button{
-    position: absolute;
-    left: 5rem;
-    bottom: 16rem;
-    padding: .5rem;
-    border-radius: 5px;
-    font-size: 1.5rem;
-}
-.land button:hover{
-    cursor: pointer;
-}
-
-.land p{
-    padding: 10px;
-    font-size: 1.5rem;
-    text-align: center;
-    margin: 0;
-}
-.land h1{
-    padding: 10px;
-    margin: 0;
-}
-picture img{
+.land img{
     display: block;
     width: 100%;
     height: auto;
-} */
-
-/*--------STYLING THE HOME PAGE----------*/
-/* 
-.content{
-    display: grid;
-    gap: 1.5rem;
 }
-
-.content section{
-    border: 1px solid #ddd;
-    padding: 10px;
-    border-radius: 5px;
-
-}
-.content section li{
-    font-size: 1.1rem;
-    letter-spacing: 1px;
-    color: #0e1e34;
-}
-.content section h2{
+.land h1{
+    color: #000080;
     padding: 10px;
     margin: 0;
-    color: #000080;
 }
-.content section p{
-    font-size: 1.1rem;
-    padding: 0 1.5rem;
-    color: #0e1e34;
+.land p{
+    font-size: 1.5rem;
+    color: #3D405B;
+    padding: 10px;
+    margin: 0;
+   
 }
 
+
+.events{
+    padding: 10px;
+    border: 2px solid #bbb;
+    border-radius: 5px;
+    
+}
+.events img{
+    width: 200px;
+    height: auto ;
+    margin: 10px;
+}
+.events h2{
+    color: #000080;
+    padding: 0 10px;
+    border-bottom: 2px dashed #000080;
+    padding-bottom: 10px;
+}
+.events ol li{
+    padding: 5px;
+    font-size: 1.1rem;
+}
+.events a{
+    font-size: 1.3rem;
+    border: 2px solid #bbb;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #eee;
+    text-align: center;
+    margin-left: 1.3rem;
+
+}
+.events a:hover{
+    background-color: #e0c05f;
+}
+.action{
+    display: grid;
+}
+
+.content{
+    display: grid;
+    margin-top: 2rem;
+}
+.content article {
+    padding: 10px;
+    border: 2px solid #bbb;
+    border-radius: 5px;
+    margin: .5rem 0;
+}
+.content article h2{
+    color: #000080;
+    margin: 0;
+    padding-left: 1rem;
+    border-bottom: 2px dashed #000080;
+    padding-bottom: 10px;
+}
+.content article p{
+    font-size: 1.1rem;
+    padding-left: 1.5rem;
+}
+.clear{
+    color: #000080;
+    margin: 1rem;
+    padding: 5px;
+}
 .spot{
     display: grid;
     gap: 1.5rem;
-    margin-top: 1.5rem;
+    border: 2px solid #bbb;
+    padding: 10px;
+    border-radius: 5px;
+    
 }
 
 .spot section{
-    border: 1px solid #bbb;
+    border: 2px solid #bbb;
     border-radius: 5px;
-    padding: 5px;
+    padding: 10px;
 }
 
 .spot section img{
     display: block;
-    width: 150px;
+    width: 100px;
     height: auto;
     margin: 0 auto;
 }
 .spot section p{
-    font-size: 1.1rem;
-    color: #0e1e34;
+    color: #3D405B;
     text-align: center;
     margin: 5px;
-}
-.spot section a{
-    display: block;
     font-size: 1.1rem;
-    padding: 5px;
-    color: #000080;
-    text-align: center;
 }
-
-.spot h2{
-    display: block;
+.spot section h2{
     color: #000080;
     text-align: center;
     margin: .5rem;
     padding: 5px;
-} */
+    border-bottom: 2px dashed #000080;
+    padding-bottom: 10px;
+}
+.spot section a{
+    display: block;
+    padding: 5px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+

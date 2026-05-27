@@ -1,11 +1,21 @@
-//Store the selected html elements to be used.
+const year = document.querySelector('#currentyear');
+const lastModified = document.querySelector('#lastmodified');
+const now = new Date();
+year.innerHTML = now.getFullYear();
+lastModified.textContent = document.lastModified;
+
+const hambtn = document.querySelector('#display');
+const navbar = document.querySelector('#nav-bar');
+hambtn.addEventListener('click', () => {
+    hambtn.classList.toggle('show');
+    navbar.classList.toggle('show');
+});
 
 const weatherIcon = document.querySelector('#weather-icon');
 const currentTemp = document.querySelector('#current-temp');
 const pressure = document.querySelector('#pressure');
 const humidity = document.querySelector('#humid');
 const caption = document.querySelector('figcaption');
-const spotlights = document.querySelector('#spotlights');
 
 const myKey = "a70f65065e778b9d3ac7f2461b733701";
 const myLat = "-1.94";
@@ -13,13 +23,11 @@ const myLong = "30.07";
 
 const myUrl = `//api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=imperial`;
 
-
 async function apiFetch() {
     try {
         const response = await fetch(myUrl);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
             displayResults(data);
         }
         else {
@@ -42,17 +50,18 @@ function displayResults(data) {
     caption.innerHTML = `${data.weather[0].description}`;
 }
 
+
 const weatherDays = [
     {
-        "day": "Monday",
+        "day": "Thursday",
         "temp": "26"
     },
     {
-        "day": "Tuesday",
-        "temp": "23"
+        "day": "Friday",
+        "temp": "24"
     },
     {
-        "day": "Wednesday",
+        "day": "Saturday",
         "temp": "24"
     }
 ];
@@ -70,51 +79,66 @@ weatherDays.forEach((weatherDay) => {
 
     document.querySelector('#forecast').appendChild(p);
 });
-// const url = './data/members.json';
 
-async function getCompanySpolight(){
-    const response = await fetch(url);
-    const data = await response.json();
-    displaySpotlight(data.companies)
+
+//Creatingt the spotlight section and display the spotlight randomly.
+const file = './data/members.json';
+
+async function getSpotLight() {
+    try {
+        const response = await fetch(file);
+
+        if (response.ok) {
+            const data = await response.json();
+
+            const shuffled = data.companies.sort(() => Math.random() - 0.5);
+            const selectedSpoltLight = shuffled.slice(0, 3);
+
+            displaySpotLight(selectedSpoltLight);
+        }
+        else {
+            throw Error(await response.text);
+        }
+    } catch (error) {
+        console.error(error);
+    }
 }
 
-getCompanySpolight();
+getSpotLight();
 
-let displaySpotlight = (companies)=> {
+let displaySpotLight = (companies) => {
+
+    const spotLight =  document.querySelector('#spotlights');
     companies.forEach(company => {
-        if (company.membership === "gold") {
 
-            let card = document.createElement('section');
-            let image = document.createElement('img');
-            image.setAttribute('src', company.image);
-            image.setAttribute('alt', 'company logo');
-            image.setAttribute('loading', 'lazy');
-
+        if (company.membership == "gold" || company.membership == "silver") {
+            const container = document.createElement('section')
             let name = document.createElement('h2');
             name.textContent = company.name;
-            let address = document.createElement('p');
-            address.setAttribute('class', 'address');
-            address.textContent = company.address;
-
+            let logo = document.createElement('img');
+            logo.setAttribute('src', company.image);
+            logo.setAttribute('alt', "company logo");
             let phone = document.createElement('p');
             phone.textContent = `Phone: ${company.telephone}`;
-
-            let membership = document.createElement('p');
-            membership.textContent = `Membership level: ${company.membership}`;
-
-            let companyUrl = document.createElement('a');
-            companyUrl.setAttribute('href', company.url);
-            companyUrl.textContent = company.url;
-
-
-            card.appendChild(image);
-            card.appendChild(name);
-            card.appendChild(address);
-            card.appendChild(phone);
-            card.appendChild(membership);
-            card.appendChild(companyUrl);
-            spotlights.appendChild(card);
+            let location = document.createElement('p');
+            location.textContent = `Address: ${company.address}`;
+            let member = document.createElement('p');
+            member.textContent = `Membership: ${company.membership}`; 
+            let web = document.createElement('a');
+            web.setAttribute('href', company.url);
+            web.textContent = company.url;
             
+
+            container.appendChild(name);
+            container.appendChild(logo);
+            container.appendChild(phone);
+            container.appendChild(location);
+            container.appendChild(member);
+            container.appendChild(web);
+
+            spotLight.appendChild(container);
         }
     });
+
 }
+

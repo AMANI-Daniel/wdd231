@@ -1,6 +1,7 @@
-//Store the selected html elements
 
-const hambtn = document.querySelector('#click');
+//Store the selected html elements for directory
+ 
+const hambtn = document.querySelector('#display');
 const navbar = document.querySelector('#nav-bar');
 const modebtn = document.querySelector('#mode-btn');
 const cards = document.querySelector('#cards'); 
@@ -79,6 +80,4 @@ grid.addEventListener('click', () => {
     cards.classList.remove('horiz');
 });
 
-
 //JavaScript for the home page
-
