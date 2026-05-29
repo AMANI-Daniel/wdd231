@@ -1,8 +1,9 @@
 //Store all elements selected
 
-let allCourses = document.querySelector('#all-btn');
-let cseCourses = document.querySelector('#cse-btn');
-let wddCourses = document.querySelector('#wdd-btn');
+const allCourses = document.querySelector('#all-btn');
+const cseCourses = document.querySelector('#cse-btn');
+const wddCourses = document.querySelector('#wdd-btn');
+const courseDetails = document.querySelector('#course-details');
 
 
 
@@ -88,90 +89,74 @@ const courses = [
 
 //Displaying all coureses when the all course button clicked.
 
-allCourses.addEventListener('click', () => { 
 
-    const credits = [];
 
-    let fill = document.querySelector('#fill');
+function displayCourses(courseList) {
+    const fill = document.querySelector('#fill');
+
     fill.innerHTML = "";
-    let div = document.createElement('div');
-    div.setAttribute('class', 'selected');
-    courses.forEach(course => {
 
-        let span = document.createElement('span');
+    const container = document.createElement('div');
+    container.classList.add('selected');
+
+    let totalCredits = 0;
+
+    courseList.forEach(course => {
+        const span = document.createElement('span');
         span.textContent = `${course.subject} ${course.number}`;
-        if (course.completed === true) {
-            span.style.backgroundColor = "lightgreen";
+
+        span.addEventListener('click', () => {
+            displayCourseDetails(course)
+        });
+        if (course.completed) {
+            span.style.backgroundColor = '#bbb'; 
         }
-        div.appendChild(span);
-        credits.push(course.credits);
- 
-    }); 
-    fill.appendChild(div);
-    const totalCredits = credits.reduce((accumulator, credit) => accumulator + credit, 0);
-    let paragraph = document.createElement('p');
-    paragraph.textContent = `The total number of credits are: ${totalCredits}`
-    fill.appendChild(paragraph);
-    
-    
 
-});
+        container.appendChild(span);
 
-//Displaying the cse courses if the CSE button clicked
-
-const cseFiltered = courses.filter(course => course.subject == "CSE");
-cseCourses.addEventListener('click', () => {
-
-    const credits = [];
-
-    let fill = document.querySelector('#fill');
-    fill.innerHTML = "";
-    let div = document.createElement('div');
-    div.setAttribute('class', 'selected');
-    cseFiltered.forEach(fillCourse => {
-        let span = document.createElement('span');
-        span.textContent = `${fillCourse.subject} ${fillCourse.number} `;
-        if (fillCourse.completed === true) {
-            span.style.backgroundColor = "lightgreen";
-        }
-        div.appendChild(span);
-        credits.push(fillCourse.credits);
-        
+        totalCredits += Number(course.credits) || 0;
     });
-    fill.appendChild(div);
-    const totalCredits = credits.reduce((accumulator, credit) => accumulator + credit, 0);
-    let paragraph = document.createElement('p');
-    paragraph.textContent = `The total number of credits are: ${totalCredits}`
+
+    fill.appendChild(container);
+
+    // Display total credits
+    const paragraph = document.createElement('p');
+    paragraph.textContent = `Total number of credits is: ${totalCredits}`;
     fill.appendChild(paragraph);
-    
+}
+
+// All courses
+allCourses.addEventListener('click', () => {
+    displayCourses(courses);
 });
 
-//Displaying the wdd courses if the wdd button clicked
+// CSE courses
+cseCourses.addEventListener('click', () => {
+    const cseFiltered = courses.filter(course => course.subject === "CSE");
+    displayCourses(cseFiltered);
+});
 
-const wddFiltered = courses.filter(course => course.subject == "WDD");
+// WDD courses
 wddCourses.addEventListener('click', () => {
-    const credits = [];
-
-    let fill = document.querySelector('#fill');
-    fill.innerHTML = "";
-    let div = document.createElement('div');
-    div.setAttribute('class', 'selected');
-    wddFiltered.forEach(fillCourse => {
-        let span = document.createElement('span');
-        span.textContent = `${fillCourse.subject} ${fillCourse.number}`;
-        if (fillCourse.completed === true) {
-            span.style.backgroundColor = "lightgreen";
-        }
-        div.appendChild(span);
-        credits.push(fillCourse.credits);
-
-    }); 
-
-    fill.appendChild(div);
-    const totalCredits = credits.reduce((accumulator, credit) => accumulator + credit, 0);
-    let paragraph = document.createElement('p');
-    paragraph.textContent = `The total number of credits are: ${totalCredits}`
-    fill.appendChild(paragraph);
-    
+    const wddFiltered = courses.filter(course => course.subject === "WDD");
+    displayCourses(wddFiltered);
 });
 
+//The function for displaying the course details.
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+  `;
+    courseDetails.showModal();
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    });
+}
