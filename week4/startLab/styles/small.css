@@ -1,0 +1,18 @@
+*{box-sizing: border-box;}
+
+#openButton{
+    background-color: navy;
+    color: white;
+}
+
+#dialogBox{
+    background-color: #eee;
+    border-radius: 5px;
+}
+#closeButton{
+    background: red;
+    color: white;
+}
+::backdrop{
+    background-color: rgb(255, 128, 0,0.2);
+}
