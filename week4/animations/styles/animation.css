@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*Creation a simple animation that use "animation",
+"@keyframe",
+and "transform" .*/
+#loader{
+    margin: 2rem;
+    width: 50px;
+    height: 50px;
+    border: 5px solid transparent;
+    border-color: #999 transparent #999 transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    box-shadow: 0 0 1rem rgb(0, 0, 255/ 40%);
+
+    /*My additional transiton*/
+    /* transition: background-color 1.2s ease-in-out 2s;
+    background-color: green; */
+}
+#loader::after{
+    content: '⚙️';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: pulse 1.5s ease-in-out infinite;
+    
+}
+@keyframes spin{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes pulse {
+    0%,100%{
+        transform: translate(-50%, -50%) scale(1);
+        }
+    
+    50%{
+        transform: translate(-50%, -50%) scale(1.25);
+    }
+    }
+
+/*Use transtion that activates when the user hovers over the image.*/
+
+#load-t{
+    margin: 2rem;
+    width: 50px;
+    height: 50px;
+    border: 5px solid transparent;
+    border-color: #999 white #999 white;
+    border-radius: 50%;
+    transform: rotate(0deg);
+    /* transition: spin 1.2s linear infinite; */
+    transition: transform 1.5s linear;
+    box-shadow: 0 0 2rem rgb(0, 0, 0, 40%);
+    position: relative;
+}
+
+#load-t::after{
+    content: '⚙️';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 1.5s ease-in-out;
+    font-size: 2rem;
+}
+
+#load-t:hover{
+    transform: rotate(360deg);
+}
+
+
+#load-t:hover::after{
+    transform: translate(-50%, -50%) scale(1.5);
+}
+
