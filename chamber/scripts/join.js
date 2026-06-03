@@ -13,7 +13,7 @@ hambtn.addEventListener('click', () => {
     navbar.classList.toggle('show');
 });
 
-document.querySelector('#stamp').value = new Date().toString();
+document.querySelector('#stamp').value = new Date().toLocaleString();
 
 //Styling the dialog box
 
