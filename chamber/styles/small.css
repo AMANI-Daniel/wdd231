@@ -306,3 +306,153 @@ footer h2{
     font-size: 1.1rem;
 }
 
+/*----FORM STYLE AND CARDS------*/
+
+.join h1{
+    color: #000080;
+    margin: 0;
+    padding: 10px;
+}
+.wf1{
+    border: 1px solid #bbb;
+    padding: 10px;
+    margin-bottom: 1.2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 0 5px #eee;
+}
+
+.wf1 fieldset{
+    margin-top: 1rem;
+    padding: .5rem 2%;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+}
+
+.wf1 legend{
+    padding: 0 .5rem;
+    color: #000080;
+}
+
+.wf1 label{
+    display: block;
+    margin-top: 1rem;
+    color: #3D405B;
+    font-size: .9rem;
+}
+
+.wf1 div{
+    margin-top: 1.5rem;
+    color: #000080;
+}
+
+.wf1 input[type="text"],
+.wf1 input[type="email"],
+.wf1 input[type="tel"],
+.wf1 textarea
+
+{
+    background-color: #eee;
+    display: block;
+    padding: .75rem;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    color: #555;
+    width: 100%;
+    max-width: 400px;;
+}
+
+
+
+.wf1 input[type="radio"]{
+    margin: 0 .5rem;
+}
+
+.wf1 input:required{
+    border-left: solid 5px red;
+}
+.wf1 input:required:valid {
+    border-left: solid 5px green;
+}
+
+.wf1 button{
+    padding: .75rem;
+    background-image: linear-gradient(rgb(41, 41, 179),rgb(2, 2, 39));
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 1rem 3% 1rem 3%;
+    width: 94%;
+    max-width: 400px;
+    cursor: pointer;
+}
+
+.level1{
+    margin: 1rem 0;
+}
+.level1 div{
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    background-color: #eee;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 1.5rem;
+
+    animation: pulse 3s ease-in-out infinite;
+}
+@keyframes pulse{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(.98);
+        border-radius: 10px;
+    }
+}
+
+.level1 button{
+    background-color: #fff;
+    border-radius: 5px;
+}
+.level1 h2{
+    color: #000080;
+    text-align: center;
+    margin: .5rem;
+    padding: 5px;
+    border-bottom: 2px dashed #000080;
+    padding-bottom: 10px;
+}
+
+/*------THANKYOU PAGE STYLE-----*/
+
+.thank h1{
+    color: #000080;
+    margin: 1rem;
+    padding: 10px;
+}
+#results{
+    border: 1px solid #bbb;
+    padding: 10px;
+    margin: 0 2rem;
+    border-radius: 5px;
+    background-color: #eee;
+}
+
+/*-----DIALOG STYLE----*/
+#dialogBox{
+    border-radius: 5px;
+    border: solid 1px #bbb
+}
+#dialogBox h2{
+    color: #000080;
+    border-bottom: 2px dashed #000080;
+    padding-bottom: 10px;
+}
+
+#dialogBox p{
+    padding-left: .75rem;
+}
+#closeButton{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
