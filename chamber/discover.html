@@ -4,28 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kigali Chamber Of Commerce</title>
+    <title>Discover Kigali Chamber Of Commerce</title>
     <meta name="description"
-        content="This is the landing page for the chamber of commerce. It cantains the hero image, call to action and businesses spotlights.">
+        content="The discover page locale history, current demographics, and current events. An image montage will orient visitors to the area and interesting area sites.">
     <meta name="author" content="AMANI Daniel">
     <link rel="icon" href="images/kigali.ico">
 
     <meta property="og:title" content="Kigali Chamber Of Commerce">
     <meta property="og:description"
-        content="This is the landing page for the chamber of commerce. It cantains the hero image, call to action and businesses spotlights.">
+        content="The discover page locale history, current demographics, and current events. An image montage will orient visitors to the area and interesting area sites.">
     <meta property="og:image" content="https://amani-daniel.github.io/wdd231/chamber/images/kigali-logo.svg">
     <meta property="og:url" content="https://amani-daniel.github.io/wdd231/chamber/">
 
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
-    <script src="scripts/home.js" defer></script>
+    <script type="module" src="scripts/discover.js"></script>
 </head>
 
 <body>
@@ -36,52 +37,16 @@
     </header>
     <nav class="navigation" id="nav-bar">
         <ul>
-            <li class="current"><a href="index.html">Home</a></li>
-            <li><a href="discover.html">Discover</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li class="current"><a href="discover.html">Discover</a></li>
             <li><a href="directory.html">Directory</a></li>
             <li><a href="join.html">Join</a></li>
         </ul>
     </nav>
-    <main class="home">
-        <section class="land">
-            <img src="images/kigali-large.webp" alt="kigali city image" width="600" height="400">
-            <h1>Home</h1>
-            <p>Welcome to Kigali Chamber of Commerce</p>  
-        </section>
-        <section class="events">
-            <h2>Current Events</h2>
-            <div class="action">
-                <img src="images/meet.webp" alt="meeting image">
-                <div>
-                    <ol>
-                        <li>Expand branches in other parts of country.</li>
-                        <li>Member business owners gathering.</li>
-                        <li>Selling shares in member businesses.</li>
-                        <li>Increasing member businesses up to 70%.</li>
-                    </ol>
-                    <a href="join.html">Visit the chamber</a>
-                </div>
-            </div>
-        </section>
-        <section class="content">
-            <article>
-                <h2>Kigali Weather</h2>
-                <figure>
-                    <figcaption></figcaption>
-                </figure>
-                <p>Temperature: <span id="current-temp"></span></p>
-                <p>Humidity: <span id="humid"></span></p>
-                <p>Pressure: <span id="pressure"></span></p>
-            </article>
-            <article id="forecast">
-                <h2>Weather Forecast</h2>
-            </article>
-        </section>
-        
-        <section class="business">
-            <h2 class="clear">Company spotlights</h2>
-            <div id="spotlights" class="spot"></div>
-        </section>
+    <main class="discover">
+        <p id="visits"></p>
+        <h1>Locate the Chamber in Kigali</h1>
+        <div id="showHere" class="allplaces"></div>
     </main>
     <footer>
         <div class="address">

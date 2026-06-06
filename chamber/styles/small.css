@@ -391,7 +391,7 @@ footer h2{
 }
 .level1 div{
     border: 1px solid #bbb;
-    border-radius: 5px;
+    border-radius: 0 2rem 0 2rem;
     background-color: #eee;
     padding: 10px;
     text-align: center;
@@ -455,4 +455,77 @@ footer h2{
     position: absolute;
     right: 10px;
     top: 10px;
+}
+
+/*------STYLE THE DISCOVER PAGE-------*/
+
+
+.allplaces div{
+    margin: 1rem 8px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    box-shadow: 0 0 1rem #eee;
+    overflow:hidden;
+
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "photograph"
+    "description"
+    "location"
+    "button";
+}
+.allplaces div figure{
+    margin: 0;
+    grid-area: photograph;
+}
+.allplaces div figure img{
+    width: 100%;
+    display: block;
+    
+}
+
+.allplaces div h2{
+    margin: 1rem 10px;
+    grid-area: name;
+    color: #000080;
+    text-align: center;
+    margin: .5rem;
+    padding: 5px;
+    border-bottom: 2px dashed #000080;
+    padding-bottom: 10px;
+}
+
+.allplaces div address{
+    color: #3D405B;
+    margin: 1rem 10px;
+    font-size: 1.1rem;
+    grid-area: location;
+}
+
+.allplaces div p{
+    color: #3D405B;
+    margin: 1rem 10px;
+    font-size: 1.1rem;
+    grid-area: description;
+}
+.allplaces div button{
+    grid-area: button;
+    padding: .75rem;
+    width: 80%;
+    margin: 1rem auto;
+    border-radius: 5px;
+    background-color: #000080;
+    color: #fff;
+    cursor: pointer;
+}
+.discover h1{
+    color: #000080;
+    margin: 0;
+    padding: 10px;
+}
+.discover p{
+    color: #3D405B;
+    margin: .5rem 10px;
+    font-size: 1.3rem;
 }

@@ -1,0 +1,97 @@
+@media  only screen and (min-width: 38rem) {
+
+   
+
+    header{
+        grid-template-columns: 48px auto;
+    
+    }
+    .hamburger {
+        display: none;
+    }
+
+    .navigation{
+        display: block;
+    }
+    .navigation ul{
+        display: flex;
+    }
+    .navigation ul li{
+        flex: 1 1 100%;
+    }
+    .navigation a{
+        text-align: center;
+       
+    }
+
+    /*----STYLE THE CARDS OF IMAGES-----*/
+
+    .imagecards, .spot{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        margin: 0 auto;
+
+        
+    }
+    .imagecards.horiz{
+        display: block;
+    }
+
+    .imagecards.horiz  section {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+         gap: .6rem;
+         margin: .5rem 0
+     } 
+
+    .imagecards.horiz  img {
+         display: none;
+    }
+
+    footer{
+        grid-template-columns: 1fr 200px 1fr;
+        
+    }
+    /*---------Styling index.html---------*/
+
+    .land{
+        position: relative;
+    }
+    .land p{
+        font-size: 5rem;
+        position: absolute;
+        top: 5rem;
+        left: 3rem;
+        color: #000080;
+        text-align: center;
+    }
+
+    .action{
+        grid-template-columns: 250px 1fr;
+    }
+    .content{
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    /*----FORM STYLE AND CARDS----*/
+
+    .join{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    /*------STYLE THE DISCOVER-----*/
+    .allplaces div {
+        grid-template-areas:
+            "name name"
+            "photograph description"
+            "photograph location"
+            "button button";
+    }
+
+    .allplaces div img:hover{
+        transform: scaleX(-1);
+    }
+}
