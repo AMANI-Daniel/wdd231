@@ -46,7 +46,6 @@ header span{
 
 .hamburger.show::before{
     content: "\00D7";
-    font-size:2.2rem;
 }
 
 
@@ -83,7 +82,10 @@ header span{
 }
 /*------STYLE OF THE MAIN CONTENTS---------*/
 
-.direct h1 {
+.direct h1,
+.land h1,
+.discover h1 
+{
     padding: 10px;
     margin: 0;
     color: #000080; 
@@ -102,16 +104,12 @@ header span{
     cursor: pointer;
 
 }
-
-
 .imagecards{
     display: grid;
     gap: 1.5rem;
     padding: 1rem;
 
 }
-
-
 .imagecards section {
     border: 2px solid #bbb;  
     border-radius: 5px;
@@ -138,12 +136,20 @@ header span{
     margin: 5px;
     font-size: 1.1rem;
 }
-.imagecards h2{
+.imagecards h2,
+.events h2,
+.content article h2,
+.business h2,
+.spot section h2,
+.level1 h2,
+.allplaces div h2
+{
     display: block;
     color: #000080;
     text-align: center;
     margin: .5rem;
     padding: 5px;
+    border-bottom: 2px dashed #000080;
 }
 
 /*--------STYLE THE FOOTER------*/
@@ -186,11 +192,11 @@ footer h2{
     width: 100%;
     height: auto;
 }
-h1{
+/* h1{
     color: #000080;
     padding: 10px;
     margin: 0;
-}
+} */
 .land p{
     font-size: 1.5rem;
     color: #3D405B;
@@ -209,11 +215,11 @@ h1{
     height: auto ;
     margin: 10px;
 }
-.events h2{
+/* .events h2{
     color: #000080;
     padding: 0 10px;
     border-bottom: 2px dashed #000080;
-}
+} */
 .events ol li{
     padding: 5px;
     font-size: 1.1rem;
@@ -245,21 +251,21 @@ h1{
     border-radius: 5px;
     margin: .5rem 0;
 }
-.content article h2{
+/* .content article h2{
     color: #000080;
     margin: 0;
     padding: 0 0 10px 1rem;
     border-bottom: 2px dashed #000080;
-}
+} */
 .content article p{
     font-size: 1.1rem;
     padding-left: 1.5rem;
 }
-.business h2{
+/* .business h2{
     color: #000080;
     margin: 1rem;
     padding: 5px;
-}
+} */
 .spot{
     display: grid;
     gap: 1.5rem;
@@ -277,7 +283,7 @@ h1{
 
 .spot section img{
     display: block;
-    width: 100%;
+    width: 100px;
     height: auto;
     margin: 0 auto;
 }
@@ -287,13 +293,13 @@ h1{
     margin: 5px;
     font-size: 1.1rem;
 }
-.spot section h2{
+/* .spot section h2{
     color: #000080;
     text-align: center;
     margin: .5rem;
     padding: 5px 5px 10px 5px;
     border-bottom: 2px dashed #000080;
-}
+} */
 .spot section a{
     display: block;
     padding: 5px;
@@ -348,7 +354,7 @@ h1{
     border-radius: 5px;
     color: #555;
     width: 100%;
-    max-width: 400px;;
+    max-width: 400px;
 }
 
 
@@ -403,13 +409,13 @@ h1{
     background-color: #fff;
     border-radius: 5px;
 }
-.level1 h2{
+/* .level1 h2{
     color: #000080;
     text-align: center;
     margin: .5rem;
     padding: 5px 5px 10px 5px;
     border-bottom: 2px dashed #000080;
-}
+} */
 
 /*------THANKYOU PAGE STYLE-----*/
 
@@ -468,12 +474,12 @@ h1{
 }
 
 .allplaces div h2{
-    margin: 1rem 10px;
+    /* margin: 1rem 10px; */
     grid-area: name;
-    color: #000080;
+    /* color: #000080;
     text-align: center;
     padding: 5px 10px;
-    border-bottom: 2px dashed #000080;
+    border-bottom: 2px dashed #000080; */
 }
 
 .allplaces div address{
